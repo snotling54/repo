@@ -1,0 +1,13 @@
+<!-- partie principale -->
+<section class="container">
+    <header class="page-header">
+        <h1>Vidéothèque de {{name}} <small>{{movies.length}} film{{movies.length>1?'s':''}} </small></h1>
+    </header>
+
+    <ul class="thumbnails">
+        <li *ngFor="let movie of movies">
+            <movie [theMovie]='movie'></movie>
+        </li>
+    </ul>
+
+</section>
